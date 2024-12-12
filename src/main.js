@@ -36,6 +36,7 @@ program
       // 提示用户输入参数
       let output = '';
       command.options.forEach((item) => {
+        // console.log(item);
         output = output + `gen ${item.short} ${item.description} \n`;
       });
       console.log(chalk.red(output));
